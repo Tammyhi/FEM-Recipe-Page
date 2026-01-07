@@ -46,10 +46,13 @@ img {
 /* CSS Styling */
 body {
     background-color: var(--clr-body-background);
+
 }
 
 main {
     background-color: var(--clr-main-background);
+    width: min(100vw, clamp(500px, 50vw + 2rem, 60vw));
+    margin: clamp(0px, 10vw - 50px, 6rem) auto clamp(0px, 10vw - 50px, 6rem) auto;
 }
 
 p, td, li {
