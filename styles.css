@@ -14,14 +14,14 @@ img {
 
 /* CSS Design System */
 :root {
-    --clr-prep-background: hsl(330deg, 100deg, 98deg);
-    --clr-prep-heading: hsl(332deg, 51deg, 32deg);
-    --clr-body-background: hsl(30deg, 54deg, 90deg);
+    --clr-prep-background: hsl(330deg, 100%, 98%);
+    --clr-prep-heading: hsl(332deg, 51%, 32%);
+    --clr-body-background: hsl(30deg, 54%, 90%);
     --clr-main-background: white;
-    --clr-main-heading: hsl(24deg, 5deg, 18deg);
-    --clr-text: hsl(30deg, 10deg, 34deg);
-    --clr-table-border: hsl(30deg, 18deg, 87deg);
-    --clr-section-heading: hsl(14deg, 45deg, 36deg);
+    --clr-main-heading: hsl(24deg, 5%, 18%);
+    --clr-text: hsl(30deg, 10%, 34%);
+    --clr-table-border: hsl(30deg, 18%, 87%);
+    --clr-section-heading: hsl(14deg, 45%, 36%);
 
     --spacing-100: 0.5rem;
     --spacing-150: 0.75rem;
@@ -41,4 +41,41 @@ img {
 @font-face {
     font-family: Young Serif;
     src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+/* CSS Styling */
+body {
+    background-color: var(--clr-body-background);
+}
+
+main {
+    background-color: var(--clr-main-background);
+}
+
+p, td, li {
+    color: var(--clr-text);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border-bottom: 1px solid var(--clr-table-border);
+}
+
+h1 {
+    color: var(--clr-main-heading);
+}
+
+h2 {
+    color: var(--clr-section-heading);
+}
+
+section.preparation h2 {
+    color: var(--clr-prep-heading);
+}
+
+.preparation {
+    background-color: var(--clr-prep-background);
 }
