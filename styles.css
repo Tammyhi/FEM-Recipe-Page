@@ -11,3 +11,34 @@ img {
 *:not(dialog){
     margin: 0;
 }
+
+/* CSS Design System */
+:root {
+    --clr-prep-background: hsl(330deg, 100deg, 98deg);
+    --clr-prep-heading: hsl(332deg, 51deg, 32deg);
+    --clr-body-background: hsl(30deg, 54deg, 90deg);
+    --clr-main-background: white;
+    --clr-main-heading: hsl(24deg, 5deg, 18deg);
+    --clr-text: hsl(30deg, 10deg, 34deg);
+    --clr-table-border: hsl(30deg, 18deg, 87deg);
+    --clr-section-heading: hsl(14deg, 45deg, 36deg);
+
+    --spacing-100: 0.5rem;
+    --spacing-150: 0.75rem;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
+    --spacing-600: 3rem;
+    --spacing-1600: 8rem;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Young Serif;
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
