@@ -108,7 +108,7 @@ p,
 span,
 li {
   color: var(--clr-text);
-  font-family: "Outift", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: var(--spacing-200);
   line-height: var(--lh-larger);
 }
