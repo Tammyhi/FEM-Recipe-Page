@@ -33,6 +33,9 @@ img {
   --spacing-500: 2.5rem;
   --spacing-600: 3rem;
   --spacing-1600: 8rem;
+
+  --lh-reg: 100%;
+  --lh-larger: 150%;
 }
 
 @font-face {
@@ -83,6 +86,12 @@ section.preparation li::marker {
   color: var(--clr-section-heading);
 }
 
+hr {
+  margin: var(--spacing-400);
+  border: none;
+  border-top: 1px solid var(--clr-table-border);
+}
+
 section {
   margin: var(--spacing-400);
 }
@@ -99,9 +108,12 @@ p,
 span,
 li {
   color: var(--clr-text);
+  font-family: "Outift", sans-serif;
+  font-size: var(--spacing-200);
+  line-height: var(--lh-larger);
 }
 
-span {
+div span {
   border-bottom: 1px solid var(--clr-table-border);
   padding-left: var(--spacing-150);
 }
@@ -109,15 +121,22 @@ span {
 h1 {
   color: var(--clr-main-heading);
   padding-bottom: var(--spacing-150);
+  font-family: "Young Serif", sans-serif;
+  font-size: var(--spacing-600);
 }
 
 h2 {
   color: var(--clr-section-heading);
   padding-bottom: var(--spacing-150);
+  font-family: "Young Serif", sans-serif;
+  font-size: var(--spacing-400);
 }
 
 section.preparation h2 {
   color: var(--clr-prep-heading);
+  font-family: "Outfit", sans-serif;
+  font-size: var(--spacing-300);
+  font-weight: bold;
 }
 
 section:last-of-type p {
@@ -135,4 +154,8 @@ div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: var(--spacing-300);
+}
+
+.bold {
+  font-weight: bold;
 }
