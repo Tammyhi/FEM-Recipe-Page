@@ -71,6 +71,18 @@ p:last-of-type {
   padding-bottom: var(--spacing-100);
 }
 
+section li::marker {
+  color: var(--clr-section-heading);
+}
+
+section.preparation li::marker {
+  color: var(--clr-prep-heading);
+}
+
+.macro-amount {
+  color: var(--clr-section-heading);
+}
+
 section {
   margin: var(--spacing-400);
 }
